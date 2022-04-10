@@ -1,0 +1,10 @@
+.buttonRegular {
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.buttonLink {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

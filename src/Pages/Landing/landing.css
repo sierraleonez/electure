@@ -11,3 +11,39 @@
   align-items: center;
   justify-content: center;
 }
+
+.featuredContent {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.featuredContentImage {
+  width: 20vw;
+  height: auto;
+}
+
+.featuredContentImageContainer {
+  width: auto;
+  display: flex;
+}
+
+.featuredContentTagsContainer {
+}
+
+.featuredContentTags {
+  width: 3vw;
+  height: 2vw;
+}
+
+.featuredContentMetadataContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.featuredContentMetadataContainer p {
+  margin-right: 16px;
+}

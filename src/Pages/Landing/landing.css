@@ -1,6 +1,9 @@
 .container {
-  padding: 2% 15%;
+  padding: 2% 20%;
   margin-top: -100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .heroBanner {
@@ -12,38 +15,104 @@
   justify-content: center;
 }
 
-.featuredContent {
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  padding: 16px;
+
+
+.sideContentContainer {
   background-color: white;
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  padding: 24px;
+}
+
+.sideContent {
+  display: flex;
+  align-items: center;
+}
+
+.sideContentImage {
+  width: 80px;
+  height: 80px;
+  margin-right: 16px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.courseBox {
+  transition: box-shadow .3s;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 16px 36px;
+  background-color: #f8f9fa;
+  align-items: center;
+  justify-content: center;
+}
+
+.courseBox p {
+  transition: color .3s;
+}
+
+.courseBox:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
-.featuredContentImage {
+.courseBox:hover p {
+  color: #000000;
+}
+
+.courseBoxIcon {
+  width: 5vw;
+  height: 3.8vw;
+}
+
+.courseBoxContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainContainer {
+  padding: 2% 20%;
+}
+
+.courseBox p {
+  color: #CCCCCC;
+  font-size: 16px;
+}
+
+.courseListContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sideCourseImg {
   width: 20vw;
-  height: auto;
+  height: 12vw;
 }
 
-.featuredContentImageContainer {
-  width: auto;
+.reviewPersonImage {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+}
+
+.reviewContactContainer {
   display: flex;
 }
 
-.featuredContentTagsContainer {
-}
-
-.featuredContentTags {
-  width: 3vw;
-  height: 2vw;
-}
-
-.featuredContentMetadataContainer {
+.footer {
+  padding: 2% 20%;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
 
-.featuredContentMetadataContainer p {
-  margin-right: 16px;
+.footerContent {
+  flex: 2;
+}
+
+.footerSection {
+  flex: 1;
+}
+
+.footerSectionContainer {
+  display: flex;
+  flex: 4;
 }

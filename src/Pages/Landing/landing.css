@@ -124,28 +124,15 @@
   flex: 2
 }
 
-.footer {
-  padding: 2% 20%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footerContent {
-  flex: 2;
-}
-
-.footerSection {
-  flex: 1;
-}
-
-.footerSectionContainer {
-  display: flex;
-  flex: 4;
-}
-
 .reviewsContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.footer {
+  padding: 2% 20%;
+  display: flex;
+  justify-content: space-between;
 }

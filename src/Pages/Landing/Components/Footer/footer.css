@@ -1,0 +1,21 @@
+.footer {
+  padding: 2% 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerContent {
+  flex: 2;
+}
+
+.footerSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footerSectionContainer {
+  display: flex;
+  flex: 4;
+}

@@ -5,6 +5,7 @@ import HeroBanner from "./Components/HeroBanner";
 import "./landing.css";
 import FeaturedContent from "./Components/FeaturedContent";
 import ReviewBox from "./Components/ReviewBox";
+import FooterSection from "./Components/Footer";
 
 const mockTagsIcon = [
   {
@@ -82,6 +83,30 @@ const mockMainCourse = [
     title: "Learning React Native",
   },
 ];
+
+const mockFooter = [
+  {
+    title: "About Us",
+    onClick: () => {},
+  },
+  {
+    title: "Testimonials",
+    onClick: () => {},
+  },
+  {
+    title: "Terms Of Service",
+    onClick: () => {},
+  },
+  {
+    title: "Privacy",
+    onClick: () => {},
+  },
+  {
+    title: "Contact Us",
+    onClick: () => {},
+  },
+]
+
 function Landing(): React.ReactElement {
   return (
     <div
@@ -186,9 +211,12 @@ function Landing(): React.ReactElement {
           </p>
           <div className="footerSocialMedia"></div>
         </div>
-        <FooterSection />
-        <FooterSection />
-        <FooterSection />
+        <div style={{ display: 'flex' }}>
+        <FooterSection header="Quick Links" items={mockFooter}/>
+        <FooterSection header="Quick Links" items={mockFooter}/>
+        <FooterSection header="Quick Links" items={mockFooter}/>
+
+        </div>
       </div>
     </div>
   );
@@ -238,28 +266,5 @@ function CourseBox({ data: { icon, title } }: CourseBoxProps) {
   );
 }
 
-function FooterSection() {
-  return (
-    <div className="footerSectionContainer">
-      <div className="footerSection">
-        <p className="footerSectionHeader">Quick Links</p>
-        <Button type="link" onPress={() => {}}>
-          <p className="footerSectionItem">About us</p>
-        </Button>
-        <Button type="link" onPress={() => {}}>
-          <p className="footerSectionItem">Testimonials</p>
-        </Button>
-        <Button type="link" onPress={() => {}}>
-          <p className="footerSectionItem">Terms of Service</p>
-        </Button>
-        <Button type="link" onPress={() => {}}>
-          <p className="footerSectionItem">Privacy</p>
-        </Button>
-        <Button type="link" onPress={() => {}}>
-          <p className="footerSectionItem">Contact us</p>
-        </Button>
-      </div>
-    </div>
-  );
-}
+
 export default Landing;

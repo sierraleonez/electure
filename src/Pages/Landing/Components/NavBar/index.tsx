@@ -1,5 +1,5 @@
-import { Button } from "..";
-import { Images } from "../../Assets";
+import { Button } from "../../../../Components";
+import { Images } from "../../../../Assets";
 import './navbar.css'
 
 interface NavBarItem {

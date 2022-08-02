@@ -1,4 +1,4 @@
-.container {
+.featuredContentContainer {
   padding: 2% 20%;
   margin-top: -100px;
   display: flex;
@@ -8,14 +8,24 @@
 
 .heroBanner {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 70vh;
   background-size: cover;
   align-items: center;
   justify-content: center;
 }
 
+.header {
+  font-size: 24px;
+  color: #0779e4;
+  font-weight: bold;
+}
 
+.preheader {
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
 
 .sideContentContainer {
   background-color: white;
@@ -67,6 +77,9 @@
 .courseBoxContainer {
   display: flex;
   justify-content: space-between;
+  background-color: #FFF;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .mainContainer {
@@ -80,22 +93,35 @@
 
 .courseListContainer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .sideCourseImg {
-  width: 20vw;
-  height: 12vw;
+  width: 240;
+  height: 200px;
+  align-self: center;
 }
 
-.reviewPersonImage {
-  width: 48px;
-  height: 48px;
-  border-radius: 100px;
-}
-
-.reviewContactContainer {
+.sideCourseContainer {
+  flex: 1;
+  align-items: flex-end;
   display: flex;
+  flex-direction: column;
+}
+
+.sideCourseItem {
+  padding: 20px;
+  width: fit-content;
+  box-sizing: border-box;
+  background-color: #FFF;
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.courseList {
+  display: flex;
+  flex-direction: column;
+  flex: 2
 }
 
 .footer {
@@ -115,4 +141,11 @@
 .footerSectionContainer {
   display: flex;
   flex: 4;
+}
+
+.reviewsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

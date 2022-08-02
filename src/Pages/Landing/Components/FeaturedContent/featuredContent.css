@@ -1,11 +1,12 @@
 .featuredContent {
   display: flex;
   flex-direction: row;
-  width: 60%;
   max-height: 60%;
   padding: 16px;
+  box-sizing: border-box;
   background-color: white;
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  margin-bottom: 3vh;
 }
 
 .featuredContentImage {

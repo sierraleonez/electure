@@ -1,7 +1,7 @@
-.buttonRegular {
+.buttonRegularLarge {
   background-color: #0779e4;
   cursor: pointer;
-  color: white ;
+  color: white;
   padding: 0.75rem 2rem;
   font-size: 1rem;
   border: none;
@@ -11,9 +11,24 @@
   margin-left: 0.5rem;
 }
 
+.buttonRegularSmall {
+  background-color: #0779e4;
+  cursor: pointer;
+  color: white;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
+  border: none;
+  line-height: 1.5;
+  font-weight: 400;
+  border-radius: 5px;
+  /* margin-left: 0.5rem; */
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
 .buttonLink {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  padding: 0
+  padding: 0;
 }

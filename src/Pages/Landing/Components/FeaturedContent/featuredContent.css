@@ -5,28 +5,34 @@
   padding: 16px;
   box-sizing: border-box;
   background-color: white;
-  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
   margin-bottom: 3vh;
 }
 
 .featuredContentImage {
-  width: 50%;
-  height: auto;
+  width: 16.25rem;
+  height: 16.25rem;
+  margin-right: 3rem;
 }
 
+.featuredContentTagContainer {
+  display: flex;
+  flex-direction: column;
+}
 .featuredContentTagsContainer {
-  margin-top: 8px;
-  margin-bottom: 4px;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 .featuredContentTags {
-  width: 1.5vw;
-  height: 1vw;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .featuredContentMetadataContainer {
   display: flex;
   flex-direction: row;
+  margin-bottom: 1rem;
 }
 
 .featuredContentMetadataContainer p {
@@ -52,4 +58,6 @@
   text-overflow: ellipsis;
   max-width: 50ch;
   max-height: 20ch;
+  color: rgb(54, 77, 89);
+  max-lines: 3;
 }

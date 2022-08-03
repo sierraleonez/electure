@@ -66,7 +66,7 @@ const mockMainCourse = [
     description: "aaaa",
     duration: "1h 24m",
     header: "TUTORIAL",
-    icon: Icons.reactIcon,
+    icon: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGxhcHRvcHxlbnwwfHwwfHw%3D&w=1000&q=80",
     level: "Advanced",
     releasedate: "Jun 18, 2020",
     tags: mockTagsIcon,
@@ -126,7 +126,9 @@ function Landing(): React.ReactElement {
           duration="1h 24m"
           isFeatured
           header="TUTORIAL"
-          icon={Icons.reactIcon}
+          icon={
+            "https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGxhcHRvcHxlbnwwfHwwfHw%3D&w=1000&q=80"
+          }
           level="Advanced"
           releaseDate="Jun 18, 2020"
           tags={mockTagsIcon}
@@ -138,7 +140,7 @@ function Landing(): React.ReactElement {
           ))}
         </div>
       </div>
-      <div className="mainContainer">
+      <div className="tutorialContainer">
         <p className="preheader">TUTORIAL COURSES</p>
         <p className="header">Choose Course</p>
         <div className="courseBoxContainer">
@@ -146,19 +148,16 @@ function Landing(): React.ReactElement {
             <CourseBox data={tCourse} />
           ))}
         </div>
-
+      </div>
+      <div className="mainContainer">
         <div className="contentContainer">
           <div className="utilityContainer">
             <div className="searchBox">
               <input className="searchInput" placeholder="Search something.." />
-              <Button onPress={() => {}} type="regular">
+              <Button onPress={() => {}} type="regular-lg">
                 <p>Search</p>
               </Button>
             </div>
-            {/* <div className="shareContainer">
-              <p>Share:</p>
-
-            </div> */}
           </div>
 
           <div className="mainCourseContainer">
@@ -169,14 +168,14 @@ function Landing(): React.ReactElement {
               <div className="courseList">
                 {mockMainCourse.map((course) => (
                   <FeaturedContent
-                    description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, exercitationem corrupti consectetur expedita veniam ad laboriosam itaque quo eaque ullam veritatis ex? Rerum, praesentium porro. Nesciunt voluptatum temporibus quidem consequuntur expedita modi, fugiat ratione deserunt omnis?"
-                    duration=""
+                    description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, exercitationem corrupti consectetur expedita veniam ad laboriosam itaque quo eaque ullam veritatis ex? Rerum, praesentium porro."
+                    duration="2h 32m"
                     header=""
-                    icon={Icons.reactIcon}
-                    level=""
-                    releaseDate=""
+                    icon={course.icon}
+                    level="Advanced"
+                    releaseDate="Aug 3, 2022"
                     tags={mockTagsIcon}
-                    title=""
+                    title="Learning React Native"
                   />
                 ))}
                 <Button onPress={() => {}} type="link">

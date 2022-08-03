@@ -48,6 +48,15 @@ function FeaturedContent({
           <p>{level}</p>
           <p>{releaseDate}</p>
         </div>
+        {!isFeatured && (
+          <Button
+            onPress={() => {}}
+            type="regular-sm"
+            style={{ alignSelf: "flex-start", justifySelf: "flex-end" }}
+          >
+            <p>VIEW</p>
+          </Button>
+        )}
       </div>
     </div>
   );

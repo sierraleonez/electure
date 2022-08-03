@@ -1,9 +1,10 @@
 import "./button.css";
 
-type Button = "regular" | "link";
+type Button = "regular-lg" | "link" | "regular-sm";
 enum ButtonType {
-  "regular" = "buttonRegular",
   "link" = "buttonLink",
+  "regular-lg" = "buttonRegularLarge",
+  "regular-sm" = "buttonRegularSmall",
 }
 interface ButtonProps {
   children: React.ReactElement;

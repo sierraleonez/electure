@@ -2,6 +2,7 @@
   padding: 2% 20%;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 
 .footerContent {
@@ -18,4 +19,16 @@
 .footerSectionContainer {
   display: flex;
   flex: 4;
+}
+
+.footerSectionHeader {
+  margin-bottom: 24px;
+}
+
+.footerSectionItem {
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.7;
+  font-weight: 300;
+  font-size: 16px;
 }

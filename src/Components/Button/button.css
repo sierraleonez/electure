@@ -1,6 +1,14 @@
 .buttonRegular {
-  background-color: aqua;
+  background-color: #0779e4;
   cursor: pointer;
+  color: white ;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  line-height: 1.5;
+  font-weight: 400;
+  border-radius: 5px;
+  margin-left: 0.5rem;
 }
 
 .buttonLink {

@@ -105,7 +105,7 @@ const mockFooter = [
     title: "Contact Us",
     onClick: () => {},
   },
-]
+];
 
 function Landing(): React.ReactElement {
   return (
@@ -148,11 +148,17 @@ function Landing(): React.ReactElement {
         </div>
 
         <div className="contentContainer">
-          <div className="searchBox">
-            <input />
-            <Button onPress={() => {}} type="regular">
-              <p>test</p>
-            </Button>
+          <div className="utilityContainer">
+            <div className="searchBox">
+              <input className="searchInput" placeholder="Search something.." />
+              <Button onPress={() => {}} type="regular">
+                <p>Search</p>
+              </Button>
+            </div>
+            {/* <div className="shareContainer">
+              <p>Share:</p>
+
+            </div> */}
           </div>
 
           <div className="mainCourseContainer">
@@ -193,7 +199,13 @@ function Landing(): React.ReactElement {
           <div className="reviewsContainer">
             <p className="preheader">TESTIMONIALS</p>
             <p className="header">Student Reviews</p>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '3rem' }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginTop: "3rem",
+              }}
+            >
               <ReviewBox />
               <ReviewBox />
               <ReviewBox />
@@ -203,19 +215,28 @@ function Landing(): React.ReactElement {
       </div>
       <div className="footer">
         <div className="footerContent">
-          <p>About Us</p>
-          <p className="footerAboutUsDesc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
-            ipsum minima culpa doloribus placeat accusantium. Illum aperiam
-            officiis ut quod.
-          </p>
-          <div className="footerSocialMedia"></div>
+          <div className="footerContentContainer">
+            <p>About Us</p>
+            <p className="footerAboutUsDesc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
+              ipsum minima culpa doloribus placeat accusantium. Illum aperiam
+              officiis ut quod.
+            </p>
+            <div className="footerSocialMedia">
+              <Button onPress={() => {}} type="link">
+                <img src={Icons.facebook} className="socialMediaIcon" />
+              </Button>
+              <Button onPress={() => {}} type="link">
+                <img src={Icons.instagram} className="socialMediaIcon" />
+              </Button>
+            </div>
+          </div>
         </div>
-        <div style={{ display: 'flex' }}>
-        <FooterSection header="Quick Links" items={mockFooter}/>
-        <FooterSection header="Quick Links" items={mockFooter}/>
-        <FooterSection header="Quick Links" items={mockFooter}/>
-
+        <div style={{ display: "flex", flex: 4 }}>
+          <FooterSection header="Quick Links" items={mockFooter} />
+          <FooterSection header="Quick Links" items={mockFooter} />
+          <FooterSection header="Quick Links" items={mockFooter} />
+          <FooterSection header="Quick Links" items={mockFooter} />
         </div>
       </div>
     </div>
@@ -265,6 +286,5 @@ function CourseBox({ data: { icon, title } }: CourseBoxProps) {
     </div>
   );
 }
-
 
 export default Landing;
